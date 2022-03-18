@@ -5,15 +5,18 @@ body {
 h1 {
   font-size: 75px;
   text-align: center;
-  float: top;
   color: rgb(72, 28, 153);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 10%;
 }
 
 h2 {
   font-size: 200px;
   text-align: center;
-  float: top;
   color: rgb(72, 28, 153);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  margin-top: 225px;
 }

@@ -54,14 +54,18 @@ if ((wins > losses ) && (wins > ties)) {
     var headerEl = document.createElement("h2");
     headerEl.textContent = "YOU WIN!!";
     document.body.appendChild(headerEl);
+    document.body.children[2].setAttribute("style", `font-size: ${wins * 50 + 50}px`);
 } else if ((ties > losses) && (ties > wins)) {
     document.body.setAttribute("style", "background-color: yellow");
     var headerEl = document.createElement("h2");
     headerEl.textContent = "IT's A TIE!";
     document.body.appendChild(headerEl);
+    document.body.children[2].setAttribute("style", `font-size: ${ties* 50 + 50}px`);
 } else {
 document.body.setAttribute("style", "background-color: red");
 var headerEl = document.createElement("h2");
 headerEl.textContent = "YOU LOSE";
 document.body.appendChild(headerEl);
+document.body.children[2].setAttribute("style", `font-size: ${losses * 50 + 50}px`);
 }
+
