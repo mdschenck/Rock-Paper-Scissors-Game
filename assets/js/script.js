@@ -54,18 +54,35 @@ if ((wins > losses ) && (wins > ties)) {
     var headerEl = document.createElement("h2");
     headerEl.textContent = "YOU WIN!!";
     document.body.appendChild(headerEl);
-    document.body.children[2].setAttribute("style", `font-size: ${wins * 50 + 50}px`);
+    document.body.children[2].setAttribute("style", `font-size: ${wins * 10 + 50}px`);
 } else if ((ties > losses) && (ties > wins)) {
     document.body.setAttribute("style", "background-color: yellow");
     var headerEl = document.createElement("h2");
     headerEl.textContent = "IT's A TIE!";
     document.body.appendChild(headerEl);
-    document.body.children[2].setAttribute("style", `font-size: ${ties* 50 + 50}px`);
+    document.body.children[2].setAttribute("style", `font-size: ${ties* 10 + 50}px`);
 } else {
-document.body.setAttribute("style", "background-color: red");
-var headerEl = document.createElement("h2");
-headerEl.textContent = "YOU LOSE";
-document.body.appendChild(headerEl);
-document.body.children[2].setAttribute("style", `font-size: ${losses * 50 + 50}px`);
+    document.body.setAttribute("style", "background-color: red");
+    var headerEl = document.createElement("h2");
+    headerEl.textContent = "YOU LOSE";
+    document.body.appendChild(headerEl);
+    document.body.children[2].setAttribute("style", `font-size: ${losses * 10 + 50}px`);
 }
 
+var listEl = document.createElement("ul");
+var li1 = document.createElement("li")
+var li2 = document.createElement("li")
+var li3 = document.createElement("li")
+var li4 = document.createElement("li")
+
+li1.textContent = "FINAL SCORES";
+// li1.setAttribute("style", "font-size: 150%");
+li2.textContent = `Wins: ${wins}`;
+li3.textContent = `Losses: ${losses}`;
+li4.textContent = `Ties: ${ties}`;
+
+document.body.appendChild(li1);
+document.body.appendChild(li2);
+document.body.appendChild(li3);
+document.body.appendChild(li4);
+document.body.appendChild(listEl);
